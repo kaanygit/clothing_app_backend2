@@ -31,6 +31,7 @@ def process():
             temp_filename = os.path.join(app.config['TEMP_DIR'], 'result_image_' + str(int(time.time())) + '.jpg')
             os.rename(image_path, temp_filename)
 
+            # Open the image and return it directly as a response
             with open(temp_filename, 'rb') as img_file:
                 img_data = img_file.read()
             
