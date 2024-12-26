@@ -1,0 +1,5 @@
+Flask
+gradio-client
+gradio
+Werkzeug
+httpx
